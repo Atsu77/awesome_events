@@ -18,6 +18,8 @@
           - if logged_in?
             %li.nav-item
               = link_to "ログアウト", logout_path, class: "nav-link", method: :delete
+            %li.nav-item
+              = link_to "退会", new_retirement_path, class: "nav-link"
           - else 
             %li.nav-item
               =link_to "GitHubでログイン", "/auth/github", class: "nav-link", method: :post
